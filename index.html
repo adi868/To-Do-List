@@ -31,13 +31,13 @@
 
 <body>
     <h1> To-Do List </h1>
+    <h3> Add a to-do to begin!</h3>
     <!-- h1 element represents a section header -->
     <!-- inside is the label/content for that element -->
     <div>
         <!-- <button id="displayTodosButton">Display Todos</button> -->
         <!-- button element. button labeled by its content -->
         <!-- <button id="toggleAllButton">Toggle All</button> -->
-        <button onclick="handlers.displayTodos()">Display Todos</button>
         <button onclick="handlers.toggleAll()">Toggle All</button>
     </div>
     <!-- id is an attribute. they give an element additional information that it might need -->
@@ -50,10 +50,10 @@
         <input id="changeTodoPositionInput" type="number">
         <input id="changeTodoTextInput" type="text">
     </div>
-    <div>
+    <!-- <div>
         <button onclick="handlers.deleteTodo()">Delete</button>
         <input id="deleteTodoPositionInput" type="number">
-    </div>
+    </div> -->
     <div>
         <button onclick="handlers.toggleCompleted()">Toggle Completed</button>
         <input id="toggleCompletedPositionInput" type="number">
@@ -63,7 +63,7 @@
     </ul>
 
     <script src="script.js"></script>
-    <!-- need at the bottom because if it tries to apply the src in the head the body code does not exist yet so cannot apply the js to it -->
+    <!-- need at the bottom because if it tries to apply the src in the head the body code does not exist yet so cannot apply the js to it. nothing in the DOM to manipulate -->
 </body>
 
 </html>
