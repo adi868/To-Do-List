@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- declares/tells the web browser the version of HTML that is being used -->
+<html lang="en">
+<!-- html is the element. lang is the attribute. -->
+<!-- html element represents the root of the HTML document -->
+<!-- defines the language of an element. language that non-editable elements are in-->
+
+<head>
+    <!-- meta elements must be inside the head elements -->
+    <!-- head is a collection of metadata for the document. things that are necessary for the document to run, scripts to read, but it is not visually displayed on the browser. -->
+    <meta charset="UTF-8">
+    <!-- meta element represents various kinds of metadata that cannot be represented/expressed using scripts, titles, style, base, link elements -->
+    <!-- meta charset declares the page's character encoding. suggested to use UTF-8 -->
+    <!-- name defines the name of the document-level metadata -->
+    <!-- various values of the name attribute, ex. viewport, author, description, keywords -->
+    <!-- meta data name is associated with the value contained in the content attribute -->
+    <!-- content describes/contains the values for the name attribute or the http-equiv attribute, depending on which is used -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- http-equiv is the same idea as the name attribute. declare a name attribute and give it a value contained in the content attribute. defines some kind of metadata -->
+    <script src="script.js"></script>
+    <!-- script element allows authors to include dynamic scripts in their document -->
+    <!-- src attribute specifies the source of the external script. this is an alternative to embedding the script directly in the document -->
+    <title>To-Do List</title>
+    <!-- title represents the document's title or name. they are used the identify their documents. ex. users history or bookmarks-->
+    <!-- title often different from the first header. the title is the overaching title you want for the document -->
+    <!-- title is the application name -->
+</head>
+
+<!-- body element represents the content of the document -->
+
+<body>
+    <h1> To-Do List </h1>
+    <!-- h1 element represents a section header -->
+    <!-- inside is the label/content for that element -->
+    <div>
+        <!-- <button id="displayTodosButton">Display Todos</button> -->
+        <!-- button element. button labeled by its content -->
+        <!-- <button id="toggleAllButton">Toggle All</button> -->
+        <button onclick="handlers.displayTodos()">Display Todos</button>
+        <button onclick="handlers.toggleAll()">Toggle All</button>
+    </div>
+    <!-- id is an attribute. they give an element additional information that it might need -->
+    <div>
+        <button onclick="handlers.addTodo()">Add Todo</button>
+        <input id="addTodoTextInput" type="text">
+    </div>
+    <div>
+        <button onclick="handlers.changeTodo()">Change Todo</button>
+        <input id="changeTodoPositionInput" type="number">
+        <input id="changeTodoTextInput" type="text">
+    </div>
+    <div>
+        <button onclick="handlers.deleteTodo()">Delete</button>
+        <input id="deleteTodoPositionInput" type="number">
+    </div>
+    <div>
+        <button onclick="handlers.toggleCompleted()">Toggle Completed</button>
+        <input id="toggleCompletedPositionInput" type="number">
+    </div>
+
+    <ul>
+    </ul>
+
+    <script src="script.js"></script>
+    <!-- need at the bottom because if it tries to apply the src in the head the body code does not exist yet so cannot apply the js to it -->
+</body>
+
+</html>
+<!-- these are all called tags?? also called elements-->
