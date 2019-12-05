@@ -149,5 +149,5 @@ var view = {
 // todoList.toggleCompleted(1);
 // console.log(todoList.changeTodo(0, "mo"));
 
-//when this code script runs..these elements dont exist yet. they are not on the page yet.
+//when this code script runs..these elements don't exist yet. they are not on the page yet.
 //ensures that on the page when this script runs..so can grab the js file
